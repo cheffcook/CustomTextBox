@@ -9,6 +9,11 @@
     <Window.DataContext>
         <localVM:MainViewModel/>
     </Window.DataContext>
+    <Window.Resources>
+        <Style TargetType="localVM:ExtendedTextBox">
+            <Setter Property="TextStringFormat" Value="{}{0:#0.0000}" />
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
